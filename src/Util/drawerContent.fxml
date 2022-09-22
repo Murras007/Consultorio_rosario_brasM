@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="142.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="143.0" pickOnBounds="true">
+         <image>
+            <Image url="/images/amazing.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" prefHeight="48.0" prefWidth="143.0" text="Butoon 1">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="142.0" text="button 2">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="142.0" text="butten 3">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" prefHeight="38.0" prefWidth="142.0" text="button 4">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Sair" accessibleText="Sair" buttonType="RAISED" onAction="#btnSair" prefHeight="45.0" prefWidth="142.0" text="Sair" textAlignment="CENTER">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

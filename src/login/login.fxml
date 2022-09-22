@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="490.0" style="-fx-border-radius: 10; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <ImageView fitHeight="40.0" fitWidth="56.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <image>
+         <Image url="@../images/logo1.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="62.0" layoutY="14.0" prefHeight="58.0" prefWidth="106.0" style="-fx-font-size: 14;" styleClass="title" stylesheets="@../styles/style.css" text="CONSULTORIO ROSARIO" textFill="#11d6c2" wrapText="true" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="14.0" />
+   <Label layoutX="35.0" layoutY="222.0" styleClass="title" stylesheets="@../styles/style.css" text="LOGIN" textFill="#28ebeb" wrapText="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="222.0" />
+      <TextField fx:id="Username" layoutX="31.0" layoutY="346.0" prefHeight="41.0" prefWidth="329.0" promptText="Username" styleClass="text-field" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="346.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </TextField>
+      <PasswordField fx:id="Password" layoutX="34.0" layoutY="430.0" prefHeight="41.0" prefWidth="329.0" promptText="Password" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="430.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </PasswordField>
+   <Label layoutX="24.0" layoutY="327.0" prefHeight="12.0" prefWidth="112.0" style="-fx-font-size: 13;" styleClass="sub-title" stylesheets="@../styles/style.css" text="Nome de utilizador" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="327.0" />
+   <Label layoutX="34.0" layoutY="411.0" prefHeight="12.0" prefWidth="112.0" style="-fx-font-size: 13;" styleClass="sub-title" stylesheets="@../styles/style.css" text="Palavra-passe" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="411.0" />
+   <JFXButton fx:id="login_id" buttonType="RAISED" layoutX="80.0" layoutY="546.0" onAction="#btnLogin" prefHeight="52.0" prefWidth="148.0" styleClass="save-popup-button" stylesheets="@../styles/style.css" text="Login" AnchorPane.rightAnchor="200.0" />
+   <JFXButton layoutX="286.0" layoutY="546.0" onAction="#close" prefHeight="52.0" prefWidth="148.0" ripplerFill="#eb533c" styleClass="close-popup-button" stylesheets="@../styles/style.css" text="SAIR" AnchorPane.rightAnchor="40.0" />
+      <Hyperlink layoutX="136.0" layoutY="631.0" style="-fx-font-size: 16;" styleClass="sub-title" stylesheets="@../styles/style.css" text="Esqueceste o Seu Email?" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Hyperlink>
+
+</AnchorPane>

@@ -1,0 +1,11 @@
+.label{
+
+    -fx-fon-size: 28px;
+    -fx-font-weight: bold;
+}
+#textField {
+  -fx-background-image:url('http://icons.iconarchive.com/icons/rockettheme/halloween/32/pumpkin-icon.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  -fx-font-size: 20;
+}

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="scarabsoft.jrest.converter.gson" type="repository">
+    <properties maven-id="com.scarabsoft:jrest-converter-gson:1.0.6" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jrest-converter-gson-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jrest-converter-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/jrest-converter-gson-1.0.6-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jrest-converter-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

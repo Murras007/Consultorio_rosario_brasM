@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="github.devcsrj.slf4j.okhttp3.logging.interceptor" type="repository">
+    <properties maven-id="com.github.devcsrj:slf4j-okhttp3-logging-interceptor:1.0.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-okhttp3-logging-interceptor-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-okhttp3-logging-interceptor-1.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

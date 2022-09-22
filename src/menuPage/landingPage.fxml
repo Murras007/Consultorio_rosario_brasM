@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menuPage.LandingController">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" prefHeight="400.0" prefWidth="3.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="1135.0" layoutY="261.0" onMouseClicked="#MClicked" />
+      <AnchorPane layoutX="3.0" prefHeight="103.0" prefWidth="1208.0">
+         <children>
+            <Label layoutX="55.0" layoutY="41.0" stylesheets="@../styles/style.css" text="Ola" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="41.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDrName" layoutX="100.0" layoutY="41.0" stylesheets="@../styles/style.css" text="Label" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="41.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="187.0" layoutY="103.0" maxHeight="180.0" maxWidth="339.0" minHeight="100.0" minWidth="143.0" prefHeight="180.0" prefWidth="234.0" styleClass="card" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="187.0" AnchorPane.topAnchor="103.0">
+         <children>
+            <Label layoutX="11.0" layoutY="10.0" style="-fx-background-color: primary; -fx-min-height: 60; -fx-min-width: 60; -fx-background-radius: 60%;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="20.0" />
+            <SVGPath content="M 18.558594 19.515625 C 18.472656 18.546875 18.507813 17.875 18.507813 16.988281 C 18.945313 16.761719 19.730469 15.296875 19.859375 14.058594 C 20.207031 14.03125 20.75 13.695313 20.910156 12.367188 C 20.992188 11.65625 20.652344 11.253906 20.445313 11.128906 C 21.003906 9.441406 22.167969 4.226563 18.292969 3.6875 C 17.890625 2.988281 16.871094 2.632813 15.542969 2.632813 C 10.230469 2.734375 9.589844 6.648438 10.753906 11.128906 C 10.546875 11.253906 10.207031 11.65625 10.292969 12.367188 C 10.453125 13.695313 10.996094 14.03125 11.339844 14.058594 C 11.46875 15.296875 12.285156 16.761719 12.726563 16.988281 C 12.726563 17.875 12.757813 18.546875 12.671875 19.515625 C 11.621094 22.34375 4.527344 21.546875 4.199219 27 L 27 27 C 26.671875 21.546875 19.609375 22.34375 18.558594 19.515625 Z" layoutX="25.0" layoutY="24.0" style="-fx-fill: white;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="70.0" prefHeight="49.0" prefWidth="224.0" style="-fx-text-fill: gray;" text="0" wrapText="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="14.0" prefHeight="49.0" prefWidth="132.0" style="-fx-text-fill: gray;" text="TOTAL DE PACIENTES" wrapText="true" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="447.0" layoutY="103.0" maxHeight="180.0" maxWidth="339.0" minHeight="100.0" minWidth="143.0" prefHeight="180.0" prefWidth="234.0" styleClass="card" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="447.0" AnchorPane.topAnchor="103.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" style="-fx-background-color: primary; -fx-min-height: 60; -fx-min-width: 60; -fx-background-radius: 50%;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <SVGPath content="M 18.558594 19.515625 C 18.472656 18.546875 18.507813 17.875 18.507813 16.988281 C 18.945313 16.761719 19.730469 15.296875 19.859375 14.058594 C 20.207031 14.03125 20.75 13.695313 20.910156 12.367188 C 20.992188 11.65625 20.652344 11.253906 20.445313 11.128906 C 21.003906 9.441406 22.167969 4.226563 18.292969 3.6875 C 17.890625 2.988281 16.871094 2.632813 15.542969 2.632813 C 10.230469 2.734375 9.589844 6.648438 10.753906 11.128906 C 10.546875 11.253906 10.207031 11.65625 10.292969 12.367188 C 10.453125 13.695313 10.996094 14.03125 11.339844 14.058594 C 11.46875 15.296875 12.285156 16.761719 12.726563 16.988281 C 12.726563 17.875 12.757813 18.546875 12.671875 19.515625 C 11.621094 22.34375 4.527344 21.546875 4.199219 27 L 27 27 C 26.671875 21.546875 19.609375 22.34375 18.558594 19.515625 Z" style="-fx-fill: white;" />
+               </graphic>
+            </Label>
+            <Label layoutX="82.0" layoutY="30.0" prefHeight="70.0" prefWidth="132.0" style="-fx-text-fill: gray;" text="TOTAL DE PACIENTES ATENDIDOS" wrapText="true" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="74.0" prefHeight="49.0" prefWidth="224.0" style="-fx-text-fill: gray;" text="0" wrapText="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="711.0" layoutY="103.0" maxHeight="180.0" maxWidth="339.0" minHeight="100.0" minWidth="143.0" prefHeight="180.0" prefWidth="234.0" styleClass="card" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="711.0" AnchorPane.topAnchor="103.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="14.0" style="-fx-background-color: primary; -fx-min-height: 60; -fx-min-width: 60; -fx-background-radius: 50%;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <SVGPath content="M 18.558594 19.515625 C 18.472656 18.546875 18.507813 17.875 18.507813 16.988281 C 18.945313 16.761719 19.730469 15.296875 19.859375 14.058594 C 20.207031 14.03125 20.75 13.695313 20.910156 12.367188 C 20.992188 11.65625 20.652344 11.253906 20.445313 11.128906 C 21.003906 9.441406 22.167969 4.226563 18.292969 3.6875 C 17.890625 2.988281 16.871094 2.632813 15.542969 2.632813 C 10.230469 2.734375 9.589844 6.648438 10.753906 11.128906 C 10.546875 11.253906 10.207031 11.65625 10.292969 12.367188 C 10.453125 13.695313 10.996094 14.03125 11.339844 14.058594 C 11.46875 15.296875 12.285156 16.761719 12.726563 16.988281 C 12.726563 17.875 12.757813 18.546875 12.671875 19.515625 C 11.621094 22.34375 4.527344 21.546875 4.199219 27 L 27 27 C 26.671875 21.546875 19.609375 22.34375 18.558594 19.515625 Z" style="-fx-fill: white;" />
+               </graphic>
+            </Label>
+            <Label layoutX="82.0" layoutY="30.0" prefHeight="70.0" prefWidth="132.0" style="-fx-text-fill: gray;" text="TOTAL DE PACIENTES PENDENTES" wrapText="true" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="74.0" prefHeight="49.0" prefWidth="224.0" style="-fx-text-fill: gray;" text="0" wrapText="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="538.0" layoutY="292.0" prefHeight="49.0" prefWidth="266.0" style="-fx-text-fill: Black;" stylesheets="@../styles/style.css" text="CONSULTAS AGENDADAS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TreeTableView layoutX="187.0" layoutY="341.0" prefHeight="157.0" prefWidth="883.0" styleClass="data-table-container" stylesheets="@../styles/style.css">
+        <columns>
+          <TreeTableColumn prefWidth="75.0" text="C1" />
+          <TreeTableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TreeTableView>
+      <Button fx:id="criarPaciente" layoutX="447.0" layoutY="514.0" maxWidth="158.0" mnemonicParsing="false" onAction="#CriarPaciente" prefHeight="30.0" prefWidth="158.0" styleClass="data-table-footer-button-selected" stylesheets="@../styles/style.css" text="Criar Paciente" textFill="#f2efef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="verPaciente" layoutX="619.0" layoutY="514.0" mnemonicParsing="false" onAction="#VerPaciente" prefHeight="30.0" prefWidth="140.0" styleClass="data-table-footer-button-selected" stylesheets="@../styles/style.css" text="ver todos Pacientes" textFill="#f5f4f4" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

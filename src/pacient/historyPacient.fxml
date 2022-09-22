@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane focusTraversable="true" prefHeight="565.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pacient.HistoryPacientController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="1171.0" layoutY="24.0" onMouseClicked="#MClicked" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="13.0" prefHeight="565.0" prefWidth="3.0" />
+      <TableView fx:id="anamnese" layoutX="169.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="mainComplain" prefWidth="112.0" text="Queixas Prinicipais" />
+          <TableColumn fx:id="background" prefWidth="87.0" text="Antecedentes" />
+        </columns>
+      </TableView>
+      <Label layoutX="246.0" layoutY="224.0" text="Histories" />
+      <Label layoutX="537.0" layoutY="36.0" text="Exams Objetivos" />
+      <TableView fx:id="tbObjectiveExams" layoutX="133.0" layoutY="83.0" prefHeight="99.0" prefWidth="1043.0">
+        <columns>
+          <TableColumn fx:id="weight" prefWidth="75.0" text="Peso" />
+          <TableColumn fx:id="height" prefWidth="75.0" text="Altura" />
+            <TableColumn fx:id="bloodPreasure" prefWidth="75.0" text="T.A" />
+            <TableColumn fx:id="temp" prefWidth="75.0" text="Temp" />
+            <TableColumn fx:id="head" prefWidth="75.0" text="Cabeca" />
+            <TableColumn fx:id="neck" prefWidth="75.0" text="Pescoco" />
+            <TableColumn fx:id="chest" prefWidth="75.0" text="Torax" />
+            <TableColumn fx:id="lungsExams" prefWidth="75.0" text="Exame Pulmonar" />
+            <TableColumn fx:id="ascultacao" prefWidth="75.0" text="Ascultacao" />
+            <TableColumn fx:id="cardiacExams" prefWidth="75.0" text="Exame Cardiaco" />
+            <TableColumn fx:id="abdomen" prefWidth="75.0" text="Abdomen" />
+            <TableColumn fx:id="growing" prefWidth="75.0" text="Genitais" />
+            <TableColumn fx:id="recto" prefWidth="75.0" text="Recto" />
+            <TableColumn fx:id="limps" prefWidth="75.0" text="Membros" />
+        </columns>
+      </TableView>
+      <Label layoutX="427.0" layoutY="224.0" text="Diagnostico" />
+      <TableView fx:id="tbDiagnostic" layoutX="400.0" layoutY="259.0" prefHeight="200.0" prefWidth="116.0">
+        <columns>
+          <TableColumn fx:id="diagnostic" prefWidth="115.0" text="Diagnostico" />
+        </columns>
+      </TableView>
+      <Label layoutX="536.0" layoutY="225.0" text="Exames Complementares" />
+      <Label layoutX="742.0" layoutY="225.0" text="Tratamento" />
+      <TableView fx:id="tbComplementaryExams" layoutX="537.0" layoutY="259.0" prefHeight="200.0" prefWidth="133.0">
+        <columns>
+          <TableColumn fx:id="complementsExams" prefWidth="132.0" text="Exames Complementares" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbTreatments" layoutX="704.0" layoutY="259.0" prefHeight="200.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="treatments" prefWidth="148.0" text="Tratamento" />
+        </columns>
+      </TableView>
+      <Label layoutX="903.0" layoutY="224.0" text="Recomendacao" />
+      <TableView layoutX="882.0" layoutY="259.0" prefHeight="200.0" prefWidth="124.0">
+        <columns>
+          <TableColumn prefWidth="123.0" text="Recomendacao" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
